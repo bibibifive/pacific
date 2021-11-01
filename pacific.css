@@ -1,0 +1,320 @@
+header,
+hgroup,
+nav,
+footer,
+figure,
+figcaption,
+aside,
+section,
+article {
+    display: block;
+}
+
+#mobile {
+    display: none;
+}
+
+#desktop {
+    display: inline;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    background-image: url(ptrbackground.jpg);
+    color: #666;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#wrapper {
+    margin: 0 auto;
+    width: 80%;
+    background-color: #90C7E3;
+    min-width: 960px;
+    box-shadow: 5px 5px 5px #000033;
+}
+
+header {
+    background-color: #000033;
+    color: #FFF;
+    background-image: url(sunset.jpg);
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+nav {
+    background-color: inherit;
+    padding: 20px 5px 5px 20px;
+    float: left;
+    width: 160px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+    font-size: 1.2em;
+}
+
+nav a {
+    transition: 3s ease-out;
+    text-decoration: none;
+}
+
+nav a:link {
+    color: #000033;
+}
+
+nav a:visited {
+    color: #344873;
+}
+
+nav a:hover {
+    color: #fff;
+}
+
+h1,
+h2,
+h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h1 {
+    margin-bottom: 0;
+    padding: 10px;
+}
+
+h2 {
+    text-shadow: 1px 1px 1px #ccc;
+    color: #39C;
+    margin-top: 0;
+    padding-top: 20px;
+}
+
+h3 {
+    color: #003;
+}
+
+dt {
+    font-weight: bold;
+    color: #003;
+}
+
+.resort {
+    color: #5C7FA3;
+}
+
+#content {
+    background-color: #fff;
+    margin-left: 190px;
+    padding: 0 20px 20px 30px;
+    list-style-image: url(marker.gif);
+}
+
+#content img,
+#content video,
+#content embed {
+    float: left;
+    padding-right: 20px;
+}
+
+.resort {
+    font-weight: bold;
+}
+
+#content ul {
+    list-style-position: inside;
+}
+
+footer {
+    padding: 100px 0 15px 30px;
+    margin-left: 190px;
+    background-color: #fff;
+}
+
+table {
+    border: 1px solid #3399cc;
+    width: 80%;
+    border-spacing: 0;
+}
+
+td,
+th {
+    padding: 5px;
+    border: 1px solid #3399cc;
+}
+
+td {
+    text-align: center;
+}
+
+.text {
+    text-align: left;
+}
+
+tr:nth-of-type(odd) {
+    background-color: #f5fafc;
+}
+
+label {
+    float: left;
+    display: block;
+    text-align: right;
+    width: 120px;
+    padding-right: 15px;
+}
+
+input,
+textarea {
+    display: block;
+    margin-bottom: 20px;
+}
+
+#gallery img {
+    float: none;
+    border: none;
+}
+
+#gallery {
+    position: relative;
+    height: 200px;
+    text-align: left;
+    background-color: #fff;
+}
+
+#gallery ul {
+    width: 300px;
+    list-style: none;
+}
+
+#gallery li {
+    display: inline;
+    float: left;
+    padding: 10px;
+}
+
+#gallery a,
+#gallery a:link {
+    text-decoration: none;
+    color: #eaeaea;
+    font-style: italic;
+}
+
+#gallery span {
+    position: absolute;
+    left: -1000px;
+    opacity: 0;
+    -webkit-transition: opacity 3s ease-in-out;
+    -moz-transition: opacity 3s ease-in-out;
+    -o-transition: opacity 3s ease-in-out;
+    transition: opacity 3s ease-in-out;
+}
+
+#gallery a:hover span {
+    position: absolute;
+    width: 400px;
+    top: 16px;
+    left: 320px;
+    text-align: center;
+    opacity: 1;
+}
+
+figure {
+    position: absolute;
+    left: 0;
+    text-align: center;
+    /* opacity: .25; */
+}
+
+footer {
+    clear: both;
+}
+
+@media only screen and (max-width:768px) {
+    body {
+        margin: 0;
+    }
+    #wrapper {
+        max-width: 0;
+        width: auto;
+    }
+    #content {
+        margin-left: 0;
+    }
+    nav {
+        float: none;
+        width: auto;
+        padding: 0;
+    }
+    nav ul {
+        text-align: center;
+    }
+    nav li {
+        display: inline;
+        padding: 0 0.75em;
+    }
+    footer {
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    body {
+        margin: 0;
+    }
+    #wrapper {
+        max-width: 0;
+        width: auto;
+        margin: 0;
+    }
+    #content {
+        margin-left: 0;
+        padding: 0.1em 1em;
+        margin: 0;
+        font-size: 90%;
+    }
+    h1 {
+        margin: 0;
+        font-size: 1.5em;
+        padding-left: 0.3em;
+    }
+    nav ul {
+        padding: 0;
+    }
+    nav li {
+        display: block;
+        margin: 0;
+        border-bottom: 2px solid #330000;
+    }
+    nav a {
+        display: block;
+    }
+    #content img {
+        float: none;
+        padding: 0;
+        margin: 0.1em;
+    }
+    #content ul {
+        list-style-position: outside;
+    }
+    #mobile {
+        display: inline;
+    }
+    #desktop {
+        display: none;
+    }
+    footer {
+        margin-left: 0;
+    }
+    label {
+        float: none;
+        text-align: left;
+    }
+    figure {
+        display: none;
+    }
+}

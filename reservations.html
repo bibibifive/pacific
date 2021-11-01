@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pacific Trails Resort::Reservations</title>
+    <link rel="stylesheet" href="pacific.css">
+    <!-- [if it IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
+    </script>
+    <![endif]-->
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>Pacific Trails Resort</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="yurts.html">Yurts</a></li>
+                <li><a href="activities.html">Activities</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div id="content">
+                <h2>Pacific Trails Resort::Reservations</h2>
+                <h3>Contact Us Today!</h3>
+                <p>Required fields are marked with an asterisk *</p>
+                <form action="http://webdevbasics.net/scripts/pacific.php" method="post">
+                    <label for="myFName">*First Name</label>
+                    <input required="required" type="text" name="myFName" id="myFName">
+                    <label for="myLName">*Last Name</label>
+                    <input required="required" type="text" name="myLName" id="myLName">
+                    <label for="myEmail">*E-mail</label>
+                    <input required="required" size="40" type="email" name="myEmail" id="myEmail">
+                    <label for="myPhone">*Phone</label>
+                    <input required="required" maxlength="12" type="tel" name="myPhone" id="myPhone">
+
+                    <label for="mydate">Arrival Date</label>
+                    <input type="date" name="mydate">
+                    <label for="mynight">Nights</label>
+                    <input type="number" min="1" max="14" name="mynight">
+                    <label for="myPhone">Comments:</label>
+                    <textarea name="myComments" id="myComments" cols="32" rows="2"></textarea>
+                    <input type="submit" value="submit">
+                </form>
+                <div id="contact">
+                    Pacific Trails Resort <br> 12010 Pacific Trails Road <br> Zephyr, CA 95555
+                    <br> <a id="mobile" href="tel:888-555-5555">888-555-5555</a>
+                    <span id="desktop">888-555-5555</span>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            Copyright @ 2014 Pacific TrailsResort <br>
+            <a href="">2867293046@qq.com</a>
+        </footer>
+    </div>
+
+
+</body>
+
+</html>
